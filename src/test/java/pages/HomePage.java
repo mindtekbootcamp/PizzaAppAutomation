@@ -3,7 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utilities.Driver;
+import utilities.Driver
+import java.util.List;
 
 public class HomePage {
     public HomePage() {
@@ -34,6 +35,10 @@ public class HomePage {
     public WebElement placeOrderButton;
     @FindBy(id = "reset")
     public WebElement resetButton;
+    @FindBy(id = "dialog")
+    public WebElement successMessage;
+
+}
 }
 
 
@@ -52,4 +57,4 @@ public class HomePage {
 
 
 
-
+ master
