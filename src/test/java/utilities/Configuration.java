@@ -23,6 +23,7 @@ public class Configuration {
             System.out.println("Failed to load properties file.");
         } finally {
             try {
+                assert input != null;
                 input.close();
             } catch (IOException e) {
                 System.out.println("Had exception while tried to close input object.");
