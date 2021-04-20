@@ -34,6 +34,7 @@ public class HomePage {
     public WebElement placeOrderButton;
     @FindBy(id = "reset")
     public WebElement resetButton;
+    //
     @FindBy(id = "dialog")
     public WebElement successMessage;
 
