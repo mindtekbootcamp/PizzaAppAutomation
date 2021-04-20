@@ -12,7 +12,7 @@ public class Configuration {
 
     // What we can write that will make connection once we create an object out of this class
     static{
-        String path = "C:\\Users\\kaira\\IdeaProjects\\PizzaAppAutomation\\src\\test\\resources\\configurations\\Configuration.properties";
+        String path = "/Users/arslankabulniyazov/IdeaProjects/MindtekTestNGAutomation/src/test/resources/configurations/Configuration.properties";
         try {
             input= new FileInputStream(path);
             properties=new Properties();
@@ -23,6 +23,7 @@ public class Configuration {
             System.out.println("Failed to load properties file.");
         } finally {
             try {
+                assert input != null;
                 input.close();
             } catch (IOException e) {
                 System.out.println("Had exception while tried to close input object.");
